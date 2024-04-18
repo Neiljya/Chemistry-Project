@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: rgb(24, 19, 68);
+}
+
+header {
+    margin-top: 3em;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+#container3D canvas {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sidebar {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.widget {
+    background: rgb(255, 255, 255);
+    border-radius: 20px; 
+    width: 50px; 
+    height: 50px;
+    margin-bottom: 10px;
+    transition: width 0.5s;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.widget .button {
+    display: none;
+    white-space: nowrap;
+    line-height: 50px;
+    color: rgb(14, 14, 14);
+    padding-left: 15px; 
+}
+
+.widget:hover {
+    width: 150px; 
+}
+
+.widget:hover .button {
+    display: block;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(34, 34, 34);
+    padding: 20px;
+    color: white;
+    z-index: 2000;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    border-radius: 15px;  
+    overflow: hidden;  
+    text-align: center;
+}
+
+.popup.show {
+    display: block;
+    animation-name: slideIn;
+}
+
+.popup.hide {
+    animation-name: slideOut;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-400%, -50%);
+    }
+    to {
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translate(-50%, -50%);
+    }
+    to {
+        transform: translate(400%, -50%);
+    }
+}
+
+
+.popup img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.popup p {
+    line-height: 1.6;  
+    text-align: justify;  
+    margin-top: 20px;  
+    white-space: pre-line;  
+}
+
+.popup button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.popup button.close-button {
+    background-color: rgb(17, 17, 17);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+}
+
+.popup button.close-button:hover {
+    background-color: #c33;
+}

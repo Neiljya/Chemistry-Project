@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Interactive Overview of Hydrochloric Acid</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Hydrochloric Acid</h1>
+        </header>
+        <main>
+            <div id="container3D"></div>
+            <div class="sidebar">
+                <div class="widget" data-target="popup1">
+                    <div class="button">Properties</div>
+                </div>
+                <div class="widget" data-target="popup2">
+                    <div class="button">Safety</div>
+                </div>
+                <div class="widget" data-target="popup3">
+                    <div class="button">History</div>
+                </div>
+                <div class="widget" data-target="popup4">
+                    <div class="button">Role</div>
+                </div>
+            </div>
+            <div id="popup1" class="popup">
+                <img src="images/hclpopup.png" alt="Popup Image 1">
+                <p>Hydrochloric Acid (HCl), also known as muriatic acid, is a clear, colorless, highly pungent solution of hydrogen chloride in water. It is a highly corrosive, strong mineral acid with many industrial uses. HCl is found naturally in gastric acid.
+
+                    - Chemical Formula: HCl
+                    - Molar Mass: 36.46 g/mol
+                    - Density: 1.18 g/mL (for 20% solution in water)
+                    - Melting Point: -27.32 °C
+                    - Boiling Point: 110 °C
+
+                    Hydrochloric acid is used in various sectors:
+                    
+                    - Manufacturing of Plastics: Especially in the production of PVC.
+                    - Metal Processing: Used to clean metals in a process called pickling.
+                    - Food Industry: Utilized as a food additive and in the production of gelatin.</p>
+                <button class="close-button">Close</button>
+            </div>
+            <div id="popup2" class="popup">
+                <img src="images/warning.png" alt="Popup Image 2">
+                <p>Hydrochloric acid has diverse applications across various industries. 
+                    It plays a critical role in the production of fertilizers, dyes, and in the petroleum refining process. 
+                    In the food industry, it serves as a food additive and in gelatin production. 
+                    Despite its benefits, hydrochloric acid must be handled with extreme caution due to its highly corrosive nature. 
+                    Safety measures include using proper protective equipment such as gloves, goggles, and face shields, and ensuring adequate ventilation in areas where it is used or stored.
+                    These sections provide a concise yet informative glimpse into what hydrochloric acid is and its importance in both industrial and everyday contexts. 
+                    The titles are designed to be clear and direct, encouraging users to click and learn more.</p>
+                <button class="close-button">Close</button>
+            </div>
+
+            <div id="popup3" class="popup">
+                <img src="images/history.png" alt="Popup Image 3">
+                <p>Muriatic acid, derived from rock salt and sulfuric acid, was produced in the 19th century through the Leblanc process. 
+                    Its industrial applications during the Industrial Revolution included metal pickling and cleaning iron and steel. 
+                    The introduction of the Solvay process in the late 19th century increased availability and reduced costs. 
+                    This chemical discovery significantly impacted technology and industry..</p>
+                <button class="close-button">Close</button>
+            </div>
+
+            <div id="popup4" class="popup">
+                <img src="images/physiology.png" alt="Popup Image 4">
+                <p>- Digestion of Proteins: HCl activates pepsinogen into pepsin, an enzyme that digests proteins, breaking them down into smaller peptides. 
+
+                    This is a vital step in the digestive process, as proteins need to be reduced to their constituent amino acids for absorption.
+
+                    - Defense Mechanism: The acidic environment in the stomach helps to kill bacteria and other pathogens that enter with food, protecting the body from many potential infections.
+                    - Absorption of Nutrients: HCl facilitates the absorption of certain minerals like calcium, magnesium, and zinc by solubilizing them, making them more available for intestinal absorption.
+                    - Symptoms and Disorders: An imbalance in hydrochloric acid production can lead to various gastrointestinal disorders. 
+
+                    Excess gastric acid can result in conditions like gastroesophageal reflux disease (GERD) and peptic ulcers, 
+                    whereas insufficient acid production can hinder digestion and absorption, leading to nutritional deficiencies and gastrointestinal infections.</p>
+                <button class="close-button">Close</button>
+            </div>
+        </main>
+        <script type="module" src="js/main.js"></script>
+        <script src="js/popup.js"></script>
+    </body>
+</html>
